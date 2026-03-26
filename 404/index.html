@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oriana Turus</title>
+  <meta name="description" content="Autrice | Author">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+  
+  
+  <nav class="site-nav" id="site-nav">
+    <div class="lang-toggle">
+      <button class="lang-btn active"
+              onclick="switchLang('it')" aria-label="Italiano">IT</button>
+      <span class="lang-sep">|</span>
+      <button class="lang-btn "
+              onclick="switchLang('en')" aria-label="English">EN</button>
+    </div>
+
+    <a href="/" class="nav-logo">Oriana Turus</a>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about">Chi sono</a></li>
+      <li><a href="#books">Libri</a></li>
+      <li><a href="#collaborations">Collaborazioni</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#contact">Contatti</a></li>
+    </ul>
+
+    <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <style type="text/css" media="screen">
+  .container {
+    margin: 10px auto;
+    max-width: 600px;
+    text-align: center;
+  }
+  h1 {
+    margin: 30px 0;
+    font-size: 4em;
+    line-height: 1;
+    letter-spacing: -1px;
+  }
+</style>
+
+<div class="container">
+  <h1>404</h1>
+
+  <p><strong>Page not found :(</strong></p>
+  <p>The requested page could not be found.</p>
+</div>
+
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span class="footer-logo">Oriana Turus</span>
+      <p class="footer-copy">&copy; 2026 Oriana Turus — Tutti i diritti riservati.</p>
+    </div>
+  </footer>
+
+  <script>
+    const nav = document.getElementById('site-nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    const toggle = document.getElementById('nav-toggle');
+    const links = document.getElementById('nav-links');
+    toggle.addEventListener('click', () => {
+      links.classList.toggle('open');
+      toggle.classList.toggle('active');
+    });
+    links.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        links.classList.remove('open');
+        toggle.classList.remove('active');
+      });
+    });
+
+    function switchLang(lang) {
+      const hash = window.location.hash;
+      window.location.href = (lang === 'it' ? '/' : '/en/') + (hash || '');
+    }
+
+    const fadeEls = document.querySelectorAll('.fade-up');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.15 });
+    fadeEls.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
