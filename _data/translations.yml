@@ -1,0 +1,89 @@
+it:
+  nav:
+    about: "Chi sono"
+    books: "Libri"
+    blog: "Blog"
+    collaborations: "Collaborazioni"
+    contact: "Contatti"
+  hero:
+    tagline: "Autrice"
+    quote: "Eppure, un giorno, sono sicura, riuscirò a mettere la testa — e il cuore — a posto..."
+    cta_blog: "Leggi il blog"
+    cta_books: "I miei libri"
+  about:
+    title: "Chi sono"
+    bio: "Sono Oriana Turus, autrice. Scrivo di emozioni, di storie che restano, di quel filo invisibile che lega le persone tra loro. Tra le parole trovo la mia forma di ordine nel caos — e spero che anche tu possa trovarci qualcosa di tuo."
+  books:
+    title: "Libri & Scritti"
+    book:
+      title: "Don Giovanni per caso"
+      year: "2025"
+      link: "https://www.landitore.it/dongiovannipercaso/"
+      cta: "Acquista su Land Editore"
+  collaborations:
+    title: "Collaborazioni"
+    subtitle: "Ho collaborato con diverse riviste, podcast e progetti editoriali."
+    projects:
+      - title: "Land Magazine"
+        description: "Magazine culturale online e cartaceo"
+        link: "https://www.landitore.it/landmagazine/"
+  blog:
+    title: "Blog"
+    subtitle: "Pensieri, storie e riflessioni sulla piattaforma Substack."
+    cta: "Leggi su Substack"
+  contact:
+    title: "Contatti"
+    subtitle: "Per collaborazioni, eventi o semplicemente per un saluto."
+    email_label: "Scrivimi"
+    social:
+      facebook: "Facebook"
+      instagram: "Instagram"
+      pixelfed: "Pixelfed"
+      wattpad: "Wattpad"
+  footer:
+    rights: "Tutti i diritti riservati."
+
+en:
+  nav:
+    about: "About"
+    books: "Books"
+    blog: "Blog"
+    collaborations: "Collaborations"
+    contact: "Contact"
+  hero:
+    tagline: "Author"
+    quote: "Yet one day, I'm sure, I'll manage to sort out my head — and my heart..."
+    cta_blog: "Read the blog"
+    cta_books: "My books"
+  about:
+    title: "About"
+    bio: "I'm Oriana Turus, a writer. I write about emotions, about stories that linger, about the invisible thread that connects people to one another. In words I find my own kind of order in the chaos — and I hope you might find something of yours in them too."
+  books:
+    title: "Books & Writing"
+    book:
+      title: "Don Giovanni per caso"
+      year: "2025"
+      link: "https://www.landitore.it/dongiovannipercaso/"
+      cta: "Buy on Land Editore"
+  collaborations:
+    title: "Collaborations"
+    subtitle: "I've worked with various magazines, podcasts and editorial projects."
+    projects:
+      - title: "Land Magazine"
+        description: "Printed and online cultural magazine"
+        link: "https://www.landitore.it/landmagazine/"
+  blog:
+    title: "Blog"
+    subtitle: "Thoughts, stories and reflections on Substack."
+    cta: "Read on Substack"
+  contact:
+    title: "Contact"
+    subtitle: "For collaborations, events, or simply to say hello."
+    email_label: "Write to me"
+    social:
+      facebook: "Facebook"
+      instagram: "Instagram"
+      pixelfed: "Pixelfed"
+      wattpad: "Wattpad"
+  footer:
+    rights: "All rights reserved."

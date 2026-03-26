@@ -1,0 +1,7 @@
+---
+layout: default
+title: Author Bio
+---
+
+{% capture about_content %}{% include bio.md %}{% endcapture %}
+{{ about_content | markdownify }}

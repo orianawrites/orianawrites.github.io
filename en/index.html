@@ -1,0 +1,158 @@
+---
+layout: default
+lang: en
+title: ""
+---
+
+{% assign t = site.data.translations.en %}
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <span class="hero-tagline">{{ t.hero.tagline }}</span>
+      <h1 class="hero-name">Oriana<br><em>Turus</em></h1>
+      <blockquote class="hero-quote">
+        {{ t.hero.quote }}
+      </blockquote>
+      <div class="hero-ctas">
+        <a href="#blog" class="btn btn-primary">{{ t.hero.cta_blog }}</a>
+        <a href="#books" class="btn btn-ghost">{{ t.hero.cta_books }}</a>
+      </div>
+    </div>
+
+    <div class="hero-image-wrap">
+      <div class="hero-image-frame">
+        <img src="/assets/IMG_6562.png" alt="Oriana Turus">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about-section" id="about">
+  <div class="container">
+    <div class="about-inner">
+      <div class="about-aside fade-up">
+        <span class="section-label">{{ t.nav.about }}</span>
+        <h2>Who<br>am I<span class="script">?</span></h2>
+      </div>
+      <div class="about-body fade-up">
+        <div class="divider"></div>
+        <p>{{ t.about.bio }}</p>
+        <div class="about-signature">Oriana</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="books-section" id="books">
+  <div class="container">
+    <div class="books-header fade-up">
+      <span class="section-label">{{ t.nav.books }}</span>
+      <h2>{{ t.books.title }}</h2>
+      <div class="divider"></div>
+    </div>
+
+    <div class="books-grid">
+      <div class="book-card fade-up">
+        <a href="{{ t.books.book.link }}" target="_blank" rel="noopener" class="book-cover">
+          <img src="/assets/don_giovanni_per_caso.jpg" alt="{{ t.books.book.title }}">
+        </a>
+        <div class="book-info">
+          <p class="book-title">{{ t.books.book.title }}</p>
+          <span class="book-year">{{ t.books.book.year }}</span>
+          <a href="{{ t.books.book.link }}" target="_blank" rel="noopener" class="book-cta">
+            {{ t.books.book.cta }} &rarr;
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="collaborations-section" id="collaborations">
+  <div class="container">
+    <div class="collaborations-header fade-up">
+      <span class="section-label">{{ t.nav.collaborations }}</span>
+      <h2>{{ t.collaborations.title }}</h2>
+      <div class="divider"></div>
+      <p>{{ t.collaborations.subtitle }}</p>
+    </div>
+
+    <div class="collaborations-grid">
+      {% for project in t.collaborations.projects %}
+      {% if project.link %}
+      <a href="{{ project.link }}" target="_blank" rel="noopener" class="collaboration-card fade-up">
+        <h3>{{ project.title }}</h3>
+        <p>{{ project.description }}</p>
+      </a>
+      {% else %}
+      <div class="collaboration-card fade-up">
+        <h3>{{ project.title }}</h3>
+        <p>{{ project.description }}</p>
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="blog-section" id="blog">
+  <div class="container">
+    <div class="blog-inner">
+      <div class="blog-text fade-up">
+        <span class="section-label">{{ t.nav.blog }}</span>
+        <h2>{{ t.blog.title }}</h2>
+        <div class="divider"></div>
+        <p>{{ t.blog.subtitle }}</p>
+        <a href="{{ site.author.substack }}" target="_blank" rel="noopener" class="btn btn-primary">
+          {{ t.blog.cta }} &rarr;
+        </a>
+      </div>
+
+      <div class="blog-visual fade-up">
+        <div class="substack-card">
+          <p class="substack-card-text">
+            "I write because I can't help but do it. Every word is a small act of courage."
+          </p>
+          <span class="substack-badge">Substack</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact-section" id="contact">
+  <div class="container">
+    <div class="contact-inner">
+      <div class="contact-info fade-up">
+        <span class="section-label">{{ t.nav.contact }}</span>
+        <h2>{{ t.contact.title }}</h2>
+        <div class="divider"></div>
+        <p>{{ t.contact.subtitle }}</p>
+        {% if site.author.email != "" %}
+        <a href="mailto:{{ site.author.email }}" class="contact-link">
+          {{ t.contact.email_label }} &rarr;
+        </a>
+        {% endif %}
+      </div>
+
+      <div class="contact-social fade-up">
+        <a href="{{ site.author.substack }}" target="_blank" rel="noopener" class="social-item">
+          Substack
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=100079551469734" target="_blank" rel="noopener" class="social-item">
+          {{ t.contact.social.facebook }}
+        </a>
+        <a href="https://www.instagram.com/oriana_turus_autrice/" target="_blank" rel="noopener" class="social-item">
+          {{ t.contact.social.instagram }}
+        </a>
+        <a href="https://pixelfed.social/Writermum_81" target="_blank" rel="noopener" class="social-item">
+          {{ t.contact.social.pixelfed }}
+        </a>
+        <a href="https://www.wattpad.com/user/OrianaTurusAutrice" target="_blank" rel="noopener" class="social-item">
+          {{ t.contact.social.wattpad }}
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
