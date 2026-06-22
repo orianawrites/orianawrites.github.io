@@ -15,18 +15,29 @@ it:
     bio: "Sono Oriana Turus, autrice. Scrivo di emozioni, di storie che restano, di quel filo invisibile che lega le persone tra loro. Tra le parole trovo la mia forma di ordine nel caos — e spero che anche tu possa trovarci qualcosa di tuo."
   books:
     title: "Libri & Scritti"
-    book:
-      title: "Don Giovanni per caso"
-      year: "2025"
-      link: "https://www.landitore.it/dongiovannipercaso/"
-      cta: "Acquista su Land Editore"
+    list:
+      - title: "Don Giovanni per caso"
+        year: "2025"
+        link: "https://www.landeditore.it/dongiovannipercaso/"
+        cta: "Acquista su Land Editore"
+        image: "don_giovanni_per_caso.jpg"
+      - title: "Otto Volte Sì"
+        year: "2026"
+        link: "#"
+        cta: "Disponibile dal 25 giugno"
+        image: "otto_volte_si.jpg"
+      - title: "Il principe è arrivato, io no (stavo dormendo)"
+        year: "2026"
+        link: "#"
+        cta: "Presto disponibile"
+        image: "il_principe_e_arrivato.jpg"
   collaborations:
     title: "Collaborazioni"
     subtitle: "Ho collaborato con diverse riviste, podcast e progetti editoriali."
     projects:
       - title: "Land Magazine"
         description: "Magazine culturale online e cartaceo"
-        link: "https://www.landitore.it/landmagazine/"
+        link: "https://www.landeditore.it/landmagazine/"
   blog:
     title: "Blog"
     subtitle: "Pensieri, storie e riflessioni sulla piattaforma Substack."
@@ -60,18 +71,29 @@ en:
     bio: "I'm Oriana Turus, a writer. I write about emotions, about stories that linger, about the invisible thread that connects people to one another. In words I find my own kind of order in the chaos — and I hope you might find something of yours in them too."
   books:
     title: "Books & Writing"
-    book:
-      title: "Don Giovanni per caso"
-      year: "2025"
-      link: "https://www.landitore.it/dongiovannipercaso/"
-      cta: "Buy on Land Editore"
+    list:
+      - title: "Don Giovanni per caso"
+        year: "2025"
+        link: "https://www.landeditore.it/dongiovannipercaso/"
+        cta: "Buy on Land Editore"
+        image: "don_giovanni_per_caso.jpg"
+      - title: "Otto Volte Sì"
+        year: "2026"
+        link: "#"
+        cta: "Available from June 25"
+        image: "otto_volte_si.jpg"
+      - title: "Il principe è arrivato, io no (stavo dormendo)"
+        year: "2026"
+        link: "#"
+        cta: "Coming soon"
+        image: "il_principe_e_arrivato.jpg"
   collaborations:
     title: "Collaborations"
     subtitle: "I've worked with various magazines, podcasts and editorial projects."
     projects:
       - title: "Land Magazine"
         description: "Printed and online cultural magazine"
-        link: "https://www.landitore.it/landmagazine/"
+        link: "https://www.landeditore.it/landmagazine/"
   blog:
     title: "Blog"
     subtitle: "Thoughts, stories and reflections on Substack."

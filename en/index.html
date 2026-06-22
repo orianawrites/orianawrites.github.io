@@ -53,18 +53,20 @@ title: ""
     </div>
 
     <div class="books-grid">
+      {% for item in t.books.list %}
       <div class="book-card fade-up">
-        <a href="{{ t.books.book.link }}" target="_blank" rel="noopener" class="book-cover">
-          <img src="/assets/don_giovanni_per_caso.jpg" alt="{{ t.books.book.title }}">
+        <a href="{{ item.link }}" target="_blank" rel="noopener" class="book-cover">
+          <img src="/assets/{{ item.image | default: 'don_giovanni_per_caso.jpg' }}" alt="{{ item.title }}">
         </a>
         <div class="book-info">
-          <p class="book-title">{{ t.books.book.title }}</p>
-          <span class="book-year">{{ t.books.book.year }}</span>
-          <a href="{{ t.books.book.link }}" target="_blank" rel="noopener" class="book-cta">
-            {{ t.books.book.cta }} &rarr;
+          <p class="book-title">{{ item.title }}</p>
+          <span class="book-year">{{ item.year }}</span>
+          <a href="{{ item.link }}" target="_blank" rel="noopener" class="book-cta">
+            {{ item.cta }} &rarr;
           </a>
         </div>
       </div>
+      {% endfor %}
     </div>
   </div>
 </section>
